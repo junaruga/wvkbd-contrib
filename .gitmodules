@@ -1,0 +1,3 @@
+[submodule "vendor/wvkbd"]
+	path = vendor/wvkbd
+	url = https://git.sr.ht/~proycon/wvkbd
