@@ -3,7 +3,6 @@
 static const char *keymap_names[] = {"latin"};
 
 static const char *keymaps[NUMKEYMAPS] = {
-
     // LATIN
     "xkb_keymap {\
 xkb_keycodes \"(unnamed)\" {\
