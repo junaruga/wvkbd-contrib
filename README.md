@@ -1,6 +1,6 @@
 # wvkbd-contrib
 
-My contributed layout sets for wvkbd.
+My contributed layout sets for [wvkbd](https://git.sr.ht/~proycon/wvkbd).
 
 Please don't contribute your layout sets to this repository. Instead, you can
 fork this repository, and manage your layout sets on your repository.
