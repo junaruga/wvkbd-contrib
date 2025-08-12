@@ -32,3 +32,6 @@ clean :
 
 format:
 	clang-format -i ${HEADERS}
+
+check-format:
+	clang-format --dry-run --Werror ${HEADERS}
