@@ -22,5 +22,11 @@ jobs:
             libxkbcommon-dev \
             scdoc
       - run: make check-format
+      # Layout: hello
       - run: make
       - run: ./wvkbd-hello --version
+      - run: make clean
+      # Layout: split
+      - run: make LAYOUT=split
+      - run: ./wvkbd-split --version
+      - run: make clean LAYOUT=split
