@@ -3,10 +3,10 @@
 #define KBD_PIXEL_HEIGHT 400
 
 /* how tall the keyboard should be by default (can be overriden) */
-#define KBD_PIXEL_LANDSCAPE_HEIGHT 400
+#define KBD_PIXEL_LANDSCAPE_HEIGHT 550
 
 /* spacing around each key */
-#define KBD_KEY_BORDER 2
+#define KBD_KEY_BORDER 10
 
 /* layout declarations */
 enum layout_id {
