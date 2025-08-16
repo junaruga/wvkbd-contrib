@@ -3,7 +3,10 @@ WVKBD_DIR = vendor/wvkbd
 LAYOUT_DIR = layout
 HEADERS = $(shell find "${LAYOUT_DIR}" -name "*.h")
 
-build :
+build : copy-layout wvkbd-build copy-bin clean-layout
+.PHONY : build
+
+copy-layout :
 	@case "${LAYOUT}" in \
 	mobintl|deskintl) \
 		;; \
@@ -13,12 +16,24 @@ build :
 		cp -p "${LAYOUT_DIR}/${LAYOUT}/config.h" "${WVKBD_DIR}/config.${LAYOUT}.h"; \
 		;; \
 	esac
-	make -C "${WVKBD_DIR}" LAYOUT="${LAYOUT}"
-	mv "${WVKBD_DIR}/wvkbd-${LAYOUT}" .
-.PHONY : build
+.PHONY : copy-layout
 
-clean :
-	make -C "${WVKBD_DIR}" "${@}" LAYOUT="${LAYOUT}"
+wvkbd-build :
+	make -C "${WVKBD_DIR}" LAYOUT="${LAYOUT}"
+.PHONY : wvkbd-build
+
+copy-bin :
+	mv "${WVKBD_DIR}/wvkbd-${LAYOUT}" .
+.PHONY : copy-bin
+
+clean : wvkbd-clean clean-layout
+.PHONY : clean
+
+wvkbd-clean :
+	make -C "${WVKBD_DIR}" clean LAYOUT="${LAYOUT}"
+.PHONY : wvkbd-clean
+
+clean-layout :
 	@case "${LAYOUT}" in \
 	mobintl|deskintl) \
 		;; \
@@ -28,7 +43,7 @@ clean :
 		rm -f "${WVKBD_DIR}/config.${LAYOUT}.h"; \
 		;; \
 	esac
-.PHONY : clean
+.PHONY : clean-layout
 
 format:
 	clang-format -i ${HEADERS}
