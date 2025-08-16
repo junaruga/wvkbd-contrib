@@ -1,8 +1,6 @@
-# Notes
+# How to install dependency pacages
 
-## How to install dependency pacages
-
-Fedora
+**Fedora**
 
 I tested on Fedora Linux 42.
 
@@ -16,7 +14,7 @@ $ sudo dnf install \
   scdoc
 ```
 
-Ubuntu
+**Ubuntu**
 
 I tested on Ubuntu 24.04 noble.
 
