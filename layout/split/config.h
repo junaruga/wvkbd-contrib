@@ -1,8 +1,8 @@
 #ifndef config_h_INCLUDED
 #define config_h_INCLUDED
 
-#define DEFAULT_FONT "Sans 18"
-#define DEFAULT_ROUNDING 5
+#define DEFAULT_FONT "Sans 20"
+#define DEFAULT_ROUNDING 10
 static const int transparency = 255;
 
 struct clr_scheme schemes[] = {
