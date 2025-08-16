@@ -164,8 +164,9 @@ static struct key keys_full[] = {
     {"⇧", "⇫", 1.0, Mod, Shift, .scheme = 1},
     {"", "", 0.0, EndRow},
 
+    {"", "", 1.0, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Sup", "Sup", 1.0, Mod, Super, .scheme = 1},
     {"⌨͕↑", "⌨͔↑", 1.0, NextLayer, .scheme = 1},
     /* BackLayer doesn't work. */
@@ -175,8 +176,9 @@ static struct key keys_full[] = {
     {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
     {"", "", 1.0, Code, KEY_SPACE},
     {"Alt", "Alt", 1.0, Mod, Alt, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
+    {"", "", 1.0, Pad},
     /* end of layout */
     {"", "", 0.0, Last},
 };
@@ -223,8 +225,9 @@ static struct key keys_special[] = {
     {"⇧", "⇫", 1.0, Mod, Shift, .scheme = 1},
     {"", "", 0.0, EndRow},
 
+    {"", "", 1.0, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Sup", "Sup", 1.0, Mod, Super, .scheme = 1},
     {"⌨͕↑", "⌨͔↑", 1.0, NextLayer, .scheme = 1},
     {"⌨͕↓", "⌨͔↓", 1.0, BackLayer, .scheme = 1},
@@ -232,8 +235,9 @@ static struct key keys_special[] = {
     {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
     {"", "", 1.0, Code, KEY_SPACE},
     {"Alt", "Alt", 1.0, Mod, Alt, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
+    {"", "", 1.0, Pad},
     /* end of layout */
     {"", "", 0.0, Last},
 };
@@ -276,8 +280,9 @@ static struct key keys_function[] = {
     {"⇧", "⇫", 1.0, Mod, Shift, .scheme = 1},
     {"", "", 0.0, EndRow},
 
+    {"", "", 1.0, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Sup", "Sup", 1.0, Mod, Super, .scheme = 1},
     {"⌨͕↑", "⌨͔↑", 1.0, NextLayer, .scheme = 1},
     /* BackLayer doesn't work. */
@@ -287,8 +292,9 @@ static struct key keys_function[] = {
     {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
     {"", "", 1.0, Code, KEY_SPACE},
     {"Alt", "Alt", 1.0, Mod, Alt, .scheme = 1},
-    {"", "", 2.5, Pad},
+    {"", "", 1.5, Pad},
     {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
+    {"", "", 1.0, Pad},
     /* end of layout */
     {"", "", 0.0, Last},
 };
