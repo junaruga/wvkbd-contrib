@@ -10,4 +10,4 @@ The images were updated as of 16th August 2025.
 
 ![Special layout screenshot](image/layout_split_special.png)
 
-![Function layout screenshot](image/layout_split_special.png)
+![Function layout screenshot](image/layout_split_function.png)
